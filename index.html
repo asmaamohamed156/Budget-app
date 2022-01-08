@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet" media="all">
+    <link href="font-awesome-5/css/fontawesome-all.min.css" rel="stylesheet" media="all">
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="all">
+    <title>My Budget</title>
+</head>
+<body>
+    <div class="row result-section pb-3">
+        <div class="offset-2 col-3 mt-4 pt-4">
+            <p class="text-center text-b">Input data to calculate your budget</p>
+            <form class="pt-3">
+                <div class="form-group">
+                    <input id=""  type="text" class="form-control add-description" aria-required="true" aria-invalid="false" placeholder="Add Description">
+                </div>
+               
+                <div class="row">
+                    <div class="col-6">
+                        <div class="form-group">
+                            <input id="" type="number" class="form-control add-value" aria-required="true" aria-invalid="false" placeholder="Value">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="form-group">
+                            <select class="form-control-md form-control add-type">
+                                <option value="inc" selected>+</option>
+                                <option value="exp">-</option>
+                            </select>
+                        </div>
+                    </div>   
+                </div class="form-group"> 
+                    <input type="button" class="add-btn btn btn-lg btn-info form-control" value="Add"> 
+                </div>       
+            </form>
+            
+        
+        <div class="offset-2 col-3 col-offset-2 mt-5">
+            <div class="final-budget">
+                <p class="h3 text-dark">Available Budget in <span class="budget-month">%month%</span></p>
+                <span class="display-4 text-dark budget-value">4.000 &dollar;</span>
+                <div class="bg-info text-light mt-3 d-flex justify-content-between align-items-baseline">
+                    <p>INCOME </p>
+                    <div class="pr-5">
+                        <span class="budget-income-value">120</span>
+                    </div>
+                </div>
+                <div class="bg-danger text-light mt-2 d-flex justify-content-between align-items-baseline">
+                    <p>EXPENSES</p>
+                    <div>
+                        <span class="budget-expenses-value pr-3">120</span>
+                        <span class="budget-expenses-percentage badge badge-warning ">10%</span>
+                    </div>
+                </div>
+                
+                 
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-12 d-flex">
+                <div class="col-6">                   
+                        <p class="h3 text-info">INCOME</p>
+                        <div class="table-borderless table-striped">
+                            <table class="table">
+                                <tbody class="income-list">
+                                    <!-- <tr class="sufee-alert alert with-close alert-dismissible fade show h6">
+                                        <td class="">                                 
+                                                You successfully read this important alert.
+                                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                                
+                                        </td>
+                                        <td class="text-info">
+                                             <span>$70,261 </span>  
+                                        </td>  
+                                    </tr> -->
+                                </tbody>
+                            </table>
+                        </div>
+                </div>
+
+                <div class="col-6">
+                        <p class="h3 text-danger">EXPENSES</p>
+                        <div class="table-borderless table-striped">
+                            <table class="table">
+                                <tbody class="expense-list">
+                                    <!-- <tr class="h6">
+                                        <td>1. Australia</td>
+                                        <td class="text-danger">$70,261.65  
+                                            <span class="badge badge-danger">40 %</span>
+                                        </td>
+                                    </tr>
+                                    <tr class="sufee-alert alert with-close alert-dismissible fade show h6">
+                                        <td class="">                                 
+                                                You successfully read this important alert.
+                                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>     
+                                        </td>
+                                        <td class="text-danger">$70,261 
+                                            <span class="badge badge-danger">10%</span>
+                                        </td>
+                                    </tr> -->
+                                </tbody>
+                            </table>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+     
+
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

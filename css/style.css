@@ -1,0 +1,23 @@
+h1 {
+  text-align: center;
+}
+.result-section {
+  background-color: rgb(224, 224, 224);
+}
+.final-budget {
+  text-align: center;
+}
+.final-budget .d-flex {
+  border-radius: 5px;
+  padding: 8px 20px 0;
+}
+button.close {
+  top: -5px !important;
+  right: -15px !important;
+}
+.red {
+  color: #ff5049 !important;
+}
+.red-focus:focus {
+  border: 1px solid #ff5049 !important;
+}
